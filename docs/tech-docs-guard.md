@@ -2,7 +2,7 @@
 
 给 CANN 算子仓的技术文档(进阶教程 / 开发指南 / 安装 / context 等)做**质量体检**:通读文档 + 拿算子代码当裁判做**静态**核对,逐条带证据指出「漏讲 / 对不上代码 / 过时 / 讲错」,出一份带修改建议的报告(Markdown + 可交互 HTML)。
 
-> 本文件面向**使用者**(怎么调、怎么读报告);skill 的**行为定义**在 [`SKILL.md`](SKILL.md),问题分类清单在 [`references/problem-taxonomy.md`](references/problem-taxonomy.md)。
+> 本文件面向**使用者**(怎么调、怎么读报告);skill 的**行为定义**在 [`SKILL.md`](../skills/tech-docs-guard/SKILL.md),问题分类清单在 [`references/problem-taxonomy.md`](../skills/tech-docs-guard/references/problem-taxonomy.md)。
 
 ---
 
@@ -176,7 +176,7 @@ python3 -m scripts.render_report --repo <repo> --with-minor         # 保留瑕�
 
 | 文件 | 作用 |
 |---|---|
-| [`SKILL.md`](SKILL.md) | skill 行为定义(给 AI 执行用) |
-| [`references/problem-taxonomy.md`](references/problem-taxonomy.md) | 8 类问题清单 + 三轴 + 判定纪律(finder 的 checklist) |
-| [`templates/report-engine.html`](templates/report-engine.html) | HTML 报告引擎(自包含 CSS+JS,勿改) |
+| [`SKILL.md`](../skills/tech-docs-guard/SKILL.md) | skill 行为定义(给 AI 执行用) |
+| [`references/problem-taxonomy.md`](../skills/tech-docs-guard/references/problem-taxonomy.md) | 8 类问题清单 + 三轴 + 判定纪律(finder 的 checklist) |
+| [`templates/report-engine.html`](../skills/tech-docs-guard/templates/report-engine.html) | HTML 报告引擎(自包含 CSS+JS,勿改) |
 | `scripts/` | `find_tutorials` 发现 · `codecheck` 对照 · `linkcheck` / `support_table_check` T0 · `render_report` 渲染 · `_state` 状态与自校验闸 |
